@@ -5,11 +5,10 @@ import {Menu} from './components/Menu';
 
 import {VisualizarCliente} from './pages/Cliente/VisualizarCliente';
 
-import {EditarPedido} from './pages/Pedido/EditarPedido.js';
 import {Pedido} from './pages/Pedido/';
 
-import {CriarServico} from './pages/Servico/CriarServico.js';
-import {visualizarServico} from './pages/Servico/visualizarServico';
+import {Servico} from './pages/Servico/Servico';
+import {VisualizarServico} from './pages/Servico/VisualizarServico';
 
 function App() {
   return (
@@ -20,11 +19,10 @@ function App() {
           <Route exact path="/" component={Home}/>
           <Route path="/visualizarcliente" component={VisualizarCliente}/>
           
-          <Route exact path="/" component={Pedido}/>
-          <Route path="/editarpedido" component={EditarPedido}/>
+          <Route path="/pedido" component={Pedido}/>
 
-          <Route exact path="/visualizarservico" component={visualizarServico}/>
-          <Route path="/criarservico" component={CriarServico}/>
+          <Route path="/visualizarservico" component={VisualizarServico}/>
+          <Route path="/servico/:id" component={Servico}/>
         </Switch>
       </Router>
     </div>
