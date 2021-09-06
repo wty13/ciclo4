@@ -22,7 +22,7 @@ export const Servico = (props) => {
                 })
         }
         getServico();
-    }), [id];
+    }, [id]);
 
     return (
         <div>
@@ -37,17 +37,15 @@ export const Servico = (props) => {
                             Serviços
                         </Link>
                     </div>
-                    <div>
-                        <dl className="row">
-                            <dt className="col-sm-3">Nome</dt>
-                            <dd className="col-sm-9">[data.nome]</dd>
-                        </dl>
-                        <dl className="row">
-                            <dt className="col-sm-3">Descrição</dt>
-                            <dd className="col-sm-9">[data.descricao]</dd>
-                        </dl>
-                    </div>
                 </div>
+                <dl className="row">
+                    <dt className="col-sm-3">Nome</dt>
+                    <dd className="col-sm-9">{data.nome}</dd>
+                </dl>
+                <dl className="row">
+                    <dt className="col-sm-3">Descrição</dt>
+                    <dd className="col-sm-9">{data.descricao}</dd>
+                </dl>
             </Container>
         </div>
 

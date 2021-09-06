@@ -1,15 +1,14 @@
 import axios from 'axios';
-import { useEffect } from 'react';
+import { useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Alert, Container, Table } from "reactstrap";
-
 import { api } from '../../../config';
 
 export const VisualizarServico = () => {
 
     const [data, setData] = useState([]);
 
-    const [status, setStatus] = useStatus({
+    const [status, setStatus] = useState({
         type: '',
         message: ''
     });
@@ -40,7 +39,7 @@ export const VisualizarServico = () => {
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>NomeS</th>
+                            <th>Nome</th>
                             <th>Descrição</th>
                             <th>Ações</th>
                         </tr>

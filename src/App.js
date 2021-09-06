@@ -1,14 +1,12 @@
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Home} from './pages/Home/';
-import {Menu} from './components/Menu';
-
 import {VisualizarCliente} from './pages/Cliente/VisualizarCliente';
-
-import {Pedido} from './pages/Pedido/';
-
-import {Servico} from './pages/Servico/Servico';
+import {Menu} from './components/Menu';
 import {VisualizarServico} from './pages/Servico/VisualizarServico';
+import {Pedido} from './pages/Pedido';
+import {Servico} from './pages/Servico/Servico';
+
 
 function App() {
   return (
